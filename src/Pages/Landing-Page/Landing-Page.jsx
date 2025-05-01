@@ -5,6 +5,7 @@ import Navbar from '../../components/Navbar/Navbar.jsx';
 import HowItWorks from "./howItWorks.jsx";
 import ContactUs from "./contactUs.jsx";
 import Footer from "../../components/Footer/footer.jsx";
+import ScrollArrow from "../../components/Down-Arrow.jsx";
 
 
 
@@ -13,7 +14,9 @@ const LandingPage = () => {
         <div className="relative w-full min-h-screen bg-black">
             <Navbar />
             {/* Fixed background video and hero content */}
+
             <FirstPage />
+            <ScrollArrow/>
 
             {/* Scrollable Content */}
             <div className="scrollable-content min-h-screen bg-black text-white flex items-center justify-center">

@@ -7,7 +7,7 @@ export default function Logo({
                                  glowColor = "shadow-white",
                                  position,
                                  style = "", // 👈 added style prop
-                                 size = "w-8 h-8", // optional: allow Tailwind size override
+                                 size = "w-10 h-10", // optional: allow Tailwind size override
                              }) {
     return (
         <div

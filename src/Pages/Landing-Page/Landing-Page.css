@@ -1,0 +1,236 @@
+@import "tailwindcss";
+@tailwind utilities;
+@font-face {
+    font-family: 'Comic Relief';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/comicrelief/v13/RWmMoKWn5yAAHQvFJGN7y2A.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Comic Relief';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/comicrelief/v13/RWmMoKWn5yAAHQvFJGN7y2A.woff2) format('woff2');
+}
+
+
+/* 🪄 Custom Utilities */
+@layer utilities {
+
+    @keyframes gradientAnimation {
+        0% {
+            background-position: 0% 50%;
+        }
+        25% {
+            background-position: 50% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        75% {
+            background-position: 50% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+
+}
+
+
+
+
+.scroll-down-container {
+    position: fixed; /* Keeps the element fixed in the viewport */
+    bottom: 20px; /* Adjust as needed for vertical positioning */
+    left: 20px; /* Changed from right to left */
+    background-color: rgba(200, 200, 200, 0.3); /* Increased transparency */
+    color: black;
+    padding: 8px 15px; /* Adjusted padding for thinner and longer look */
+    border-radius: 25px; /* Rounded corners */
+    display: flex; /* Use flexbox for easy alignment */
+    align-items: center; /* Vertically center items */
+    justify-content: center; /* Horizontally center items */
+    gap: 8px; /* Adjusted gap */
+    font-family: sans-serif; /* Use a readable font */
+    font-size: 14px; /* Slightly smaller font for the thinner look */
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.scroll-down-arrow {
+    font-size: 20px; /* Adjusted arrow size to match */
+}
+
+.scroll-down-text {
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.cta-container-minimal {
+    position: absolute; /* Keeps the element fixed in the viewport */
+    top: 5%; /* Vertically center the container */
+    left: 50%; /* Horizontally center the container */
+    transform: translate(-50%, -75%); /* Adjust to position slightly above center */
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.cta-button-minimal {
+    background: rgba(255,255,255,0.1);
+    color: rgba(255, 255, 255, 0.8);
+    border: none; /* No border */
+    padding: 8px 16px; /* Even smaller padding */
+    border-radius: 15px; /* Smaller rounded corners */
+    font-family: sans-serif; /* Use a readable font */
+    font-size: 14px; /* Even smaller font size */
+    cursor: pointer; /* Changes cursor on hover */
+    display: flex; /* Align text and arrow */
+    align-items: center; /* Vertically align items */
+    gap: 6px; /* Smaller space between text and arrow */
+}
+
+.cta-button-minimal:hover {
+    opacity: 0.7; /* Slightly less transparent on hover */
+}
+
+
+.cta-text-container {
+    position: absolute;
+    top: -0.5%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1000;
+    pointer-events: none; /* Optional: don't block clicks */
+}
+
+.cta-text-gradient {
+    font-size: 4em;
+    font-weight: bold;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image:
+            linear-gradient(90deg,rgba(0, 183, 255, 1) 0%, rgba(255, 0, 0, 1) 65%, rgba(255, 157, 0, 1) 100%);
+}
+
+/* Responsive tweak */
+@media (max-width: 768px) {
+    .cta-text-gradient {
+        font-size: 2.5em;
+    }
+    .centered-div-aboutUs {
+        font-size: 18px;
+    }
+}
+
+.container-aboutUs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95%; /* Adjust height as needed */
+    width: 95%; /* Adjust width as needed */
+    border: 1px solid black; /* For demonstration */
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.centered-div-aboutUs {
+    height: 95%; /* Adjust height as needed */
+    width: 95%; /* Adjust height as needed */
+
+    align-items: center;
+    font-size: 25px; /* Adjust font size as needed */
+    color: black;
+    background: linear-gradient(342deg,rgba(58, 101, 180, 1) 0%, rgba(7, 148, 163, 1) 24%, rgba(176, 0, 0, 1) 50%, rgba(191, 131, 48, 1) 75%, rgba(117, 117, 117, 1) 100%);
+    background-size: 300% 300%;
+    animation: gradientAnimation 10s ease infinite;
+
+    border-radius: 20px;
+    overflow: hidden;
+
+    /* ✨ Floating effect */
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5),
+    0 0 30px rgba(0, 201, 255, 0.6),
+    0 0 60px rgba(132, 94, 194, 0.5);
+    transform: translateY(0px);
+
+}
+
+.comic-relief-regular {
+    font-family: "Comic Relief", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.comic-relief-bold {
+    font-family: "Comic Relief", system-ui;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+/* Landing-Page.css */
+/* ... other styles ... */
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 60px); /* Adjust based on your navbar height */
+    box-sizing: border-box;
+}
+
+.window-container { /* To cover the entire viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 90px;
+    background-color: black; /* Ensure the background is black */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    z-index: 0; /* Place it behind other elements if needed */
+}
+
+/* Style the window to take up a large portion of the screen */
+.window {
+    background: rgba(255, 255, 255, 0.1); /* Adjust transparency */
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    text-align: center;
+    max-width: 95%;
+    max-height: 95%;
+    width: auto; /* Adjust width based on content or max-width */
+    height: auto; /* Adjust height based on content or max-height */
+    display: flex;
+    flex-direction: column; /* Arrange content within the window vertically */
+    justify-content: center; /* Center content vertically within the window */
+    align-items: center; /* Center content horizontally within the window */
+    z-index: 1; /* Ensure it's above the background */
+}
+
+.spotlight-video-container {
+    /* Adjust positioning to lift it slightly */
+    border-radius: 20px;
+    overflow: hidden;
+
+    /* ✨ Floating effect */
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5),
+    0 0 30px rgba(255, 255, 255, 0.8),
+    0 0 60px rgba(132, 94, 194, 0.5);
+    transform: translateY(0px);
+}
+
+
+
+
+
+
+
+

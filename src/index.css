@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+html, body{
+    background: black;
+    color: white;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
+}
+
+@theme{
+    --color-white-50: #d9ecff;
+    --color-blue-100: #2d2d38;
+
+
+}
+
+
+

@@ -1,0 +1,64 @@
+/* Navbar.css */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7); /* Slightly transparent black */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px;
+    position: fixed; /* To keep it at the top */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100; /* Ensure it's above other elements */
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.create-account-button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    display: flex;
+    transition: font-size 0.2s ease-in-out; /* Adjust the enlargement factor as needed */
+
+}
+
+.create-account-button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    font-size: 1.1em;
+}
+
+.log-in-button {
+    display: flex;
+    cursor: pointer;
+    transition: font-size 0.2s ease-in-out
+}
+
+.log-in-button:hover{
+    font-size: 1.1em; /* Adjust the enlargement factor as needed */
+    text-decoration: underline;
+}

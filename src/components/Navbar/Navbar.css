@@ -1,6 +1,6 @@
 /* Navbar.css */
 .navbar {
-    background-color: rgba(0, 0, 0, 0.7); /* Slightly transparent black */
+    background-color: rgba(0,0,0,0.7); /* Slightly transparent black */
     color: white;
     display: flex;
     justify-content: space-between;
@@ -18,21 +18,8 @@
     font-weight: bold;
 }
 
-.navbar-nav {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
 
-.nav-item {
-    margin-right: 20px;
-}
 
-.nav-item a {
-    color: white;
-    text-decoration: none;
-}
 
 .create-account-button {
     background-color: transparent;

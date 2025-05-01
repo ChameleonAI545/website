@@ -1,20 +1,6 @@
 @import "tailwindcss";
 @tailwind utilities;
-@font-face {
-    font-family: 'Comic Relief';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/comicrelief/v13/RWmMoKWn5yAAHQvFJGN7y2A.woff2) format('woff2');
-}
 
-@font-face {
-    font-family: 'Comic Relief';
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/comicrelief/v13/RWmMoKWn5yAAHQvFJGN7y2A.woff2) format('woff2');
-}
 
 
 /* 🪄 Custom Utilities */
@@ -37,6 +23,46 @@
             background-position: 0% 50%;
         }
     }
+    @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-20px); }
+    }
+
+    @keyframes float-reverse {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(20px); }
+    }
+
+    /* 🌀 Float Animation Classes */
+    .animate-float {
+        animation: float 6s ease-in-out infinite;
+    }
+
+    .animate-float-slow {
+        animation: float 15s ease-in-out infinite;
+    }
+
+    .animate-float-reverse {
+        animation: float-reverse 6s ease-in-out infinite;
+    }
+
+    /* 🕒 Animation Delay Utilities */
+    .delay-100 {
+        animation-delay: 0.1s;
+    }
+
+    .delay-200 {
+        animation-delay: 0.2s;
+    }
+
+    .delay-300 {
+        animation-delay: 0.3s;
+    }
+
+    .delay-400 {
+        animation-delay: 0.4s;
+    }
+
 
 
 }
@@ -56,7 +82,6 @@
     align-items: center; /* Vertically center items */
     justify-content: center; /* Horizontally center items */
     gap: 8px; /* Adjusted gap */
-    font-family: sans-serif; /* Use a readable font */
     font-size: 14px; /* Slightly smaller font for the thinner look */
     z-index: 1000; /* Ensure it's above other content */
 }
@@ -98,7 +123,7 @@
 
 .cta-text-container {
     position: absolute;
-    top: -0.5%;
+    top: 0%;
     left: 0;
     width: 100%;
     text-align: center;
@@ -107,7 +132,7 @@
 }
 
 .cta-text-gradient {
-    font-size: 4em;
+    font-size: 5em;
     font-weight: bold;
     color: transparent;
     background-clip: text;
@@ -120,9 +145,6 @@
 @media (max-width: 768px) {
     .cta-text-gradient {
         font-size: 2.5em;
-    }
-    .centered-div-aboutUs {
-        font-size: 18px;
     }
 }
 
@@ -142,7 +164,6 @@
     width: 95%; /* Adjust height as needed */
 
     align-items: center;
-    font-size: 25px; /* Adjust font size as needed */
     color: black;
     background: linear-gradient(342deg,rgba(58, 101, 180, 1) 0%, rgba(7, 148, 163, 1) 24%, rgba(176, 0, 0, 1) 50%, rgba(191, 131, 48, 1) 75%, rgba(117, 117, 117, 1) 100%);
     background-size: 300% 300%;
@@ -194,6 +215,7 @@
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
     z-index: 0; /* Place it behind other elements if needed */
+    position: relative;
 }
 
 /* Style the window to take up a large portion of the screen */
@@ -226,6 +248,8 @@
     0 0 60px rgba(132, 94, 194, 0.5);
     transform: translateY(0px);
 }
+
+
 
 
 

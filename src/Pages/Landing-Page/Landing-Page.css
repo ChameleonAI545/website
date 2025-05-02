@@ -28,57 +28,6 @@
 
 
 
-.scroll-down-container {
-    position: fixed; /* Keeps the element fixed in the viewport */
-    bottom: 20px; /* Adjust as needed for vertical positioning */
-    left: 20px; /* Changed from right to left */
-    background-color: rgba(200, 200, 200, 0.3); /* Increased transparency */
-    color: black;
-    padding: 8px 15px; /* Adjusted padding for thinner and longer look */
-    border-radius: 25px; /* Rounded corners */
-    display: flex; /* Use flexbox for easy alignment */
-    align-items: center; /* Vertically center items */
-    justify-content: center; /* Horizontally center items */
-    gap: 8px; /* Adjusted gap */
-    font-size: 14px; /* Slightly smaller font for the thinner look */
-    z-index: 1000; /* Ensure it's above other content */
-}
-
-.scroll-down-arrow {
-    font-size: 20px; /* Adjusted arrow size to match */
-}
-
-.scroll-down-text {
-    white-space: nowrap; /* Prevent text from wrapping */
-}
-
-.cta-container-minimal {
-    position: absolute; /* Keeps the element fixed in the viewport */
-    top: 5%; /* Vertically center the container */
-    left: 50%; /* Horizontally center the container */
-    transform: translate(-50%, -75%); /* Adjust to position slightly above center */
-    z-index: 1000; /* Ensure it's above other content */
-}
-
-.cta-button-minimal {
-    background: rgba(255,255,255,0.1);
-    color: rgba(255, 255, 255, 0.8);
-    border: none; /* No border */
-    padding: 8px 16px; /* Even smaller padding */
-    border-radius: 15px; /* Smaller rounded corners */
-    font-family: sans-serif; /* Use a readable font */
-    font-size: 14px; /* Even smaller font size */
-    cursor: pointer; /* Changes cursor on hover */
-    display: flex; /* Align text and arrow */
-    align-items: center; /* Vertically align items */
-    gap: 6px; /* Smaller space between text and arrow */
-}
-
-.cta-button-minimal:hover {
-    opacity: 0.7; /* Slightly less transparent on hover */
-}
-
-
 .cta-text-container {
     position: absolute;
     top: 0%;
@@ -162,37 +111,36 @@
     box-sizing: border-box;
 }
 
-.window-container { /* To cover the entire viewport */
+.window-container {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    min-height: 100vh; /* Allow it to expand downward */
     padding-top: 90px;
-    background-color: black; /* Ensure the background is black */
+    background-color: black;
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    z-index: 0; /* Place it behind other elements if needed */
+    justify-content: center;
+    align-items: flex-start; /* <-- content aligns from the top */
+    z-index: 0;
     position: relative;
+    overflow: hidden; /* crop anything overflowing the viewport height */
 }
 
 /* Style the window to take up a large portion of the screen */
 .window {
-    background: rgba(255, 255, 255, 0.1); /* Adjust transparency */
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     text-align: center;
     max-width: 95%;
-    max-height: 95%;
-    width: auto; /* Adjust width based on content or max-width */
-    height: auto; /* Adjust height based on content or max-height */
+    width: auto;
     display: flex;
-    flex-direction: column; /* Arrange content within the window vertically */
-    justify-content: center; /* Center content vertically within the window */
-    align-items: center; /* Center content horizontally within the window */
-    z-index: 1; /* Ensure it's above the background */
+    flex-direction: column;
+    justify-content: flex-start; /* start content from top inside window */
+    align-items: center;
+    z-index: 1;
 }
 
 .spotlight-video-container {
@@ -207,6 +155,15 @@
     transform: translateY(0px);
 }
 
+.spotlight-video-container {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5),
+    0 0 30px rgba(255, 255, 255, 0.8),
+    0 0 60px rgba(132, 94, 194, 0.5);
+}
 
 
 

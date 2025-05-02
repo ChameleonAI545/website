@@ -9,7 +9,7 @@ const SpotlightVideo = () => {
                 autoPlay
                 muted
                 playsInline
-                className=" object-cover"
+                className="max-w-full max-h-full"
             />
             {/* Dark overlay */}
             <div className="absolute inset-0 bg-black opacity-40 z-10 pointer-events-none" />

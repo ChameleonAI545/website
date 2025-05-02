@@ -13,10 +13,9 @@ const FirstPage = () => {
                 <div className="window">
                     <div className="cta-text-container">
                         <div className="cta-text-gradient">
-                            <h1 className="font-bold mb-4  pl-5">Navigate the AI Revolution with Ease</h1>
-                            <p className="text-lg md:text-2xl pl-5 text-white/50 ">
-                                Dive into the depths of the AI revolution with ease. Our platform is built to help you
-                                easily explore and evaluate the most powerful AI tools available today.
+                            <h1 className="font-bold mb-4 pl-5">Let Our AI Find the Perfect AI for You</h1>
+                            <p className="text-lg md:text-2xl pl-5 text-white/50">
+                                Describe what you need — our intelligent AI searches the AI universe to match you with the best tools for the job.
                             </p>
                         </div>
                     </div>

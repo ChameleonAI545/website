@@ -9,11 +9,13 @@ const AboutUs = () => {
                 <h1 className="text-5xl font-bold mb-4 comic-relief-bold text-center">About us</h1>
                 <p className="text-xl md:text-3xl">
                     Welcome to your ultimate AI discovery hub — where innovation meets simplicity.
-                    Our platform is built to help you easily explore and evaluate the most powerful AI tools available today. Whether you’re a content creator streamlining your workflow, a student looking for smarter research and writing support, an entrepreneur automating business tasks, or simply an AI enthusiast — we’ve got you covered.
+                    Our platform is more than a directory; it’s powered by an intelligent AI that actively searches, recommends, and matches you with the best AI tools for your specific tasks. Whether you’re a content creator streamlining your workflow, a student seeking smarter research and writing support, an entrepreneur automating business operations, or simply an AI enthusiast — we’ve got you covered.
 
-                    Browse a curated collection of cutting-edge tools, complete with clear descriptions, helpful tags, and direct links. From writing assistants and productivity boosters to research aids and creative design tools, we make it easy to find the right solution for your needs.
+                    Explore a curated collection of cutting-edge tools, enhanced by AI-driven recommendations tailored to your needs. With clear descriptions, helpful tags, and direct links, finding the right solution has never been easier.
 
-                    Our clean, minimal interface ensures a smooth, distraction-free experience so you can focus on discovering what’s possible. At our core, we’re driven by a simple mission: to make finding and using AI tools effortless, enjoyable, and accessible to everyone.
+                    From writing assistants and productivity boosters to research aids and creative design tools, our AI helps cut through the noise — delivering personalized results so you can focus on what matters.
+
+                    Our clean, minimal interface ensures a smooth, distraction-free experience. At our core, we’re driven by a simple mission: to make discovering and using AI tools effortless, personalized, and accessible to everyone.
                 </p>
             </div>
             

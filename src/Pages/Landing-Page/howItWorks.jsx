@@ -1,30 +1,30 @@
 import React from 'react';
-import { AiOutlineSearch, AiOutlineRead, AiOutlineRocket } from 'react-icons/ai';
+import { AiOutlineRobot, AiOutlineBulb, AiOutlineThunderbolt } from 'react-icons/ai';
 
 const HowItWorks = () => {
     const steps = [
         {
             number: 1,
-            icon: <AiOutlineSearch className="text-6xl text-white mt-10" />,
-            title: 'Browse Curated Tools',
+            icon: <AiOutlineRobot className="text-6xl text-white mt-10" />,
+            title: 'Tell Our AI What You Need',
             description:
-                'Explore a handpicked library of the best AI tools across different categories — from writing and research to productivity and design. Use filters and tags to quickly find what suits your needs.',
+                'Simply describe your task or goal — whether it’s writing, coding, designing, researching, or automating. Our AI analyzes your needs and gets to work.',
             bgGradient: 'from-[#3A65B4] to-[#0794A3]',
         },
         {
             number: 2,
-            icon: <AiOutlineRead className="text-6xl text-white mt-10" />,
-            title: 'Learn What Each Tool Does',
+            icon: <AiOutlineBulb className="text-6xl text-white mt-10" />,
+            title: 'Get Smart Recommendations',
             description:
-                'Every tool comes with a concise description, feature tags, and a direct link to its site. Save time by comparing tools at a glance without endless searching.',
+                'Our AI searches, compares, and recommends the best tools tailored to your task. Skip the guesswork — discover top AI tools instantly, complete with descriptions and direct links.',
             bgGradient: 'from-[#0794A3] to-[#B00000]',
         },
         {
             number: 3,
-            icon: <AiOutlineRocket className="text-6xl text-white mt-10" />,
-            title: 'Click & Go',
+            icon: <AiOutlineThunderbolt className="text-6xl text-white mt-10" />,
+            title: 'Start Instantly',
             description:
-                'Found a tool you like? Just click and get started instantly. Many tools are free to try — no sign-up required on our end.',
+                'Found the perfect AI? Just click and go. We connect you directly to the tool so you can start creating, building, or solving — no friction, no delays.',
             bgGradient: 'from-[#BF8330] to-[#757575]',
         },
     ];
@@ -36,7 +36,7 @@ const HowItWorks = () => {
                     How It Works
                 </h2>
                 <p className="text-lg text-gray-400 text-center mb-24">
-                    Discover the perfect AI tools in just a few clicks.
+                    Our AI searches for the perfect AI tools — so you don’t have to.
                 </p>
                 <div className="space-y-60">
                     {steps.map((step, index) => (

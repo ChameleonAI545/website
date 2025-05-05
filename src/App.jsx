@@ -2,8 +2,8 @@ import React from 'react';
 import "./App.css";
 import {HashRouter as Router, Routes, Route} from "react-router-dom";
 import LandingPage from "./Pages/Landing-Page/Landing-Page";
-import ResultsPage from "./Pages/Results Page/Results-Page";
-import DiscoveryPage from "./Pages/Discover Page/Discovery-Page";
+import ResultsPage from "./Pages/Search/Results-Page";
+import DiscoveryPage from "./Pages/Home/Discovery-Page";
 
 
 

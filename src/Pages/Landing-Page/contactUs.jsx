@@ -52,16 +52,15 @@ const ContactUs = () => {
                 <div
                     className="rounded-3xl p-10 md:p-14 mx-auto max-w-3xl"
                     style={{
-                        boxShadow:
-                            '0 20px 50px rgba(0, 0, 0, 0.5), 0 0 30px rgba(0, 201, 255, 0.6), 0 0 60px rgba(132, 94, 194, 0.5)',
+
                         background:
-                            'linear-gradient(330deg,rgba(42, 123, 155, 1) 0%, rgba(191, 32, 0, 1) 50%, rgba(140, 140, 140, 1) 100%)',
+                            'linear-gradient(90deg,rgba(26, 0, 173, 1) 0%, rgba(0, 166, 163, 1) 100%)',
                         transform: 'translateY(0px)',
                     }}
                 >
                     <form onSubmit={handleSubmit} className="space-y-6 text-left">
                         <div>
-                            <label htmlFor="name" className="block text-sm font-medium text-black mb-1">Name</label>
+                            <label htmlFor="name" className="block text-sm font-medium text-white mb-1">Name</label>
                             <input
                                 type="text"
                                 name="name"
@@ -73,7 +72,7 @@ const ContactUs = () => {
                         </div>
 
                         <div>
-                            <label htmlFor="email" className="block text-sm font-medium text-black mb-1">Email</label>
+                            <label htmlFor="email" className="block text-sm font-medium text-white mb-1">Email</label>
                             <input
                                 type="email"
                                 name="email"
@@ -85,7 +84,7 @@ const ContactUs = () => {
                         </div>
 
                         <div>
-                            <label htmlFor="message" className="block text-sm font-medium text-black mb-1">Message</label>
+                            <label htmlFor="message" className="block text-sm font-medium text-white mb-1">Message</label>
                             <textarea
                                 name="message"
                                 rows="5"

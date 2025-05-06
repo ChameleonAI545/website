@@ -4,7 +4,8 @@ import './Landing-Page.css';
 
 const AboutUs = () => {
     return (
-        <div className="container-aboutUs ">
+
+        <div className="container-aboutUs  ">
             <div className="centered-div-aboutUs rounded-2xl mx-auto px-6 py-12 comic-relief-regular leading-relaxed p-8 text-center">
                 <h1 className="text-5xl font-bold mb-4 comic-relief-bold text-center">About us</h1>
                 <p className="text-xl md:text-3xl">

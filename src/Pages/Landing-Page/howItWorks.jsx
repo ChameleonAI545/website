@@ -9,7 +9,7 @@ const HowItWorks = () => {
             title: 'Tell Our AI What You Need',
             description:
                 'Simply describe your task or goal — whether it’s writing, coding, designing, researching, or automating. Our AI analyzes your needs and gets to work.',
-            bgGradient: 'from-[#3A65B4] to-[#0794A3]',
+            bgGradient: 'from-[#24017D] to-[#153282]',
         },
         {
             number: 2,
@@ -17,7 +17,7 @@ const HowItWorks = () => {
             title: 'Get Smart Recommendations',
             description:
                 'Our AI searches, compares, and recommends the best tools tailored to your task. Skip the guesswork — discover top AI tools instantly, complete with descriptions and direct links.',
-            bgGradient: 'from-[#0794A3] to-[#B00000]',
+            bgGradient: 'from-[#153282] to-[#0B6A85]',
         },
         {
             number: 3,
@@ -25,7 +25,7 @@ const HowItWorks = () => {
             title: 'Start Instantly',
             description:
                 'Found the perfect AI? Just click and go. We connect you directly to the tool so you can start creating, building, or solving — no friction, no delays.',
-            bgGradient: 'from-[#BF8330] to-[#757575]',
+            bgGradient: 'from-[#0B6A85] to-[#008A77]',
         },
     ];
 
@@ -49,11 +49,6 @@ const HowItWorks = () => {
                             {/* Gradient Card */}
                             <div
                                 className={`flex-1 bg-gradient-to-br ${step.bgGradient} rounded-3xl p-10 md:p-14`}
-                                style={{
-                                    boxShadow:
-                                        '0 20px 50px rgba(0, 0, 0, 0.5), 0 0 30px rgba(0, 201, 255, 0.6), 0 0 60px rgba(132, 94, 194, 0.5)',
-                                    transform: 'translateY(0px)',
-                                }}
                             >
                                 <div className="flex items-center gap-6 mb-4">
                                     <div className="w-16 h-16 rounded-full bg-white text-black flex items-center justify-center text-2xl font-bold">

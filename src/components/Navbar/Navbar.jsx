@@ -24,11 +24,11 @@ function Navbar() {
             {/* Normal buttons for medium and up */}
             <div className={`flex flex-row gap-2 justify-end items-center ${isOpen ? 'block' : 'hidden'} md:flex`}>
                 <button className="log-in-button flex pr-3">
-                    Sign In
+                    Login
                     <img src={LogIn} alt="Log In" style={{ width: '24px', height: '24px', marginLeft: '4px' }} />
                 </button>
                 <button className="create-account-button">
-                    Sign Up
+                    Join now
                     <img src={accountCircle} alt="Account Circle" style={{ width: '24px', height: '24px', marginLeft: '8px' }} />
                 </button>
             </div>

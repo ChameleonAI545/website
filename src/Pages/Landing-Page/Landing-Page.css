@@ -27,25 +27,13 @@
 
 
 
-
-.cta-text-container {
-    position: absolute;
-    top: 0%;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    z-index: 1000;
-    pointer-events: none; /* Optional: don't block clicks */
-}
-
 .cta-text-gradient {
-    font-size: 5em;
-    font-weight: bold;
+
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
     background-image:
-            linear-gradient(90deg,rgba(0, 183, 255, 1) 0%, rgba(255, 0, 0, 1) 65%, rgba(255, 157, 0, 1) 100%);
+            linear-gradient(90deg,rgba(55, 0, 255, 1) 1%, rgba(0, 255, 221, 1) 100%);
 }
 
 /* Responsive tweak */
@@ -72,18 +60,13 @@
 
     align-items: center;
     color: black;
-    background: linear-gradient(342deg,rgba(58, 101, 180, 1) 0%, rgba(7, 148, 163, 1) 24%, rgba(176, 0, 0, 1) 50%, rgba(191, 131, 48, 1) 75%, rgba(117, 117, 117, 1) 100%);
+    background: linear-gradient(90deg,rgba(55, 0, 255, 1) 0%, rgba(5, 255, 222, 1) 100%);
     background-size: 300% 300%;
     animation: gradientAnimation 10s ease infinite;
 
     border-radius: 20px;
     overflow: hidden;
 
-    /* ✨ Floating effect */
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5),
-    0 0 30px rgba(0, 201, 255, 0.6),
-    0 0 60px rgba(132, 94, 194, 0.5);
-    transform: translateY(0px);
 
 }
 
@@ -111,58 +94,14 @@
     box-sizing: border-box;
 }
 
-.window-container {
-    top: 0;
-    left: 0;
-    width: 100%;
-    min-height: 100vh; /* Allow it to expand downward */
-    padding-top: 90px;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start; /* <-- content aligns from the top */
-    z-index: 0;
-    position: relative;
-    overflow: hidden; /* crop anything overflowing the viewport height */
-}
 
-/* Style the window to take up a large portion of the screen */
-.window {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    text-align: center;
-    max-width: 95%;
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* start content from top inside window */
-    align-items: center;
-    z-index: 1;
-}
 
-.spotlight-video-container {
-    /* Adjust positioning to lift it slightly */
-    border-radius: 20px;
-    overflow: hidden;
-
+.floating-effect {
     /* ✨ Floating effect */
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5),
-    0 0 30px rgba(255, 255, 255, 0.8),
+    0 0 30px rgba(255, 255, 255, 0.3),
     0 0 60px rgba(132, 94, 194, 0.5);
-    transform: translateY(0px);
-}
 
-.spotlight-video-container {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    border-radius: 20px;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5),
-    0 0 30px rgba(255, 255, 255, 0.8),
-    0 0 60px rgba(132, 94, 194, 0.5);
 }
 
 

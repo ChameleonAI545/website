@@ -1,45 +1,37 @@
 import React from 'react';
-import "./Landing-Page.css";
-import SpotlightVideo from "../../components/SpotlightVideo";
-
-
-
+import chameleonImage from '../../assets/chamelionImage.jpg';
 
 
 const FirstPage = () => {
     return (
-        <>
-            <div className="window-container">
-                <div className="window">
-                    <div className="cta-text-container">
-                        <div className="cta-text-gradient">
-                            <h1 className="font-bold mb-4 pl-5">Let Our AI Find the Perfect AI for You</h1>
-                            <p className="text-lg md:text-2xl pl-5 text-white/50">
-                                Describe what you need — our intelligent AI searches the AI universe to match you with the best tools for the job.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="flex justify-center gap-4 absolute bottom-[10%] z-10">
-                        <button
-                            className="bg-[#ad2303] text-black px-6 py-3 rounded-lg text-[16px] uppercase tracking-wide shadow-md hover:shadow-lg hover:-translate-y-1 transition">
-                            Sign up
-                        </button>
-                        <button
-                            className="bg-transparent text-[#ad2303] border-2 border-[#ad2303] px-6 py-3 rounded-lg text-[16px] uppercase tracking-wide shadow-md hover:shadow-lg hover:-translate-y-1 hover:bg-[#ad230308] transition">
-                            Learn More
-                        </button>
-                    </div>
+        <div
+            className="relative min-h-screen bg-black bg-cover bg-center flex justify-center items-center overflow-hidden"
+            style={{ backgroundImage: `url(${chameleonImage})` }}
+        >
+            <div className="display: flex; mr-auto ">
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold cta-text-gradient ml-17 m-10 relative -top-50">
+                Let our AI find the perfect AI for you
+                </h1>
+                <p className="text-lg md:text-xl text-white m-10 relative -top-45 max-w-150 ml-17 cta-text-gradient">
+                Discover AI tools faster. Explore, learn, and launch all in one place. Our tool allows you to explore the AI universe easily and beautifully.
+                </p>
 
-                    <div>
+                <button className="bg-blue-500 text-black px-6 py-3 rounded-lg tracking-wide shadow-md  hover:-translate-y-1 transition relative -top-35 ml-17 floating-effect">
 
-                    </div>
-                    <div className="spotlight-video-container">
-                        <SpotlightVideo/>
-                    </div>
+                    Get started
 
-                </div>
+                </button>
+
+                <button className="border-2 border-blue-500 text-blue-500 bg-transparent px-6 py-3 rounded-lg tracking-wide shadow-md  hover:-translate-y-1 hover:bg-[#ad230308] transition relative -top-35 ml-7 floating-effect">
+
+                    Try demo
+
+                </button>
             </div>
-        </>
-    )
-}
+
+
+        </div>
+    );
+};
+
 export default FirstPage;
